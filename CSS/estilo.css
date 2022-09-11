@@ -258,6 +258,9 @@ body{
 
 
 /* BLOG */
+.header{
+    z-index: 1;
+}
 .blog__cont{
     display: flex;
     flex-wrap: wrap;
@@ -271,7 +274,11 @@ body{
 .blog div img{
     width: 30%;
     height: 30%;
+    filter: grayscale(100%);
     padding: 10px;
+}
+.blog div img:hover{
+    filter: none;
 }
 
 

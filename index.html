@@ -13,6 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="CSS/estilo.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body class="bodyIndex">
 
@@ -39,7 +41,7 @@
     <!-- Sección nota -->
     <section class="notaIndex">
         <h2>Tu café favorito en casa</h2>
-        <div class="notaIndex__cont">
+        <div class="notaIndex__cont" data-aos="fade-up" data-aos-duration="1000">
             <p class="notaIndex__texto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab perspiciatis nobis, voluptatem harum suscipit ut magni quae. Voluptatem aliquid eligendi expedita ut debitis, voluptate odit. Iste consequatur provident exercitationem dicta!</p>
             <img class="notaIndex__imagen" src="Images/nota-index.png" alt="Café en casa">
         </div>
@@ -48,7 +50,7 @@
     <!-- Sección productos -->
     <section class="productosIndex">
         <h2> Nuestros productos</h2>
-        <article class="productosIndex__cont">
+        <article class="productosIndex__cont" data-aos="fade-right" data-aos-duration="1000">
         <div>
             <img src="images/producto-1.png" alt="Black Coffee">
             <p class="productosIndex__texto">Black Coffee</p>
@@ -71,7 +73,7 @@
     <!-- Sección Blog -->
     <section class="blogIndex">
         <h2>Blog</h2>
-        <div class="blogIndex__imagenes">
+        <div class="blogIndex__imagenes" data-aos="fade-left" data-aos-duration="1000">
             <img src="images/blog-1.png" alt="Tipo de granos">
             <img src="images/blog-2.png" alt="Mejor café">
             <img src="images/blog-3.png" alt="Filtrado">
@@ -114,5 +116,8 @@
         </div>
     </footer>
     <!-- Acá finaliza el footer -->
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>

@@ -1,6 +1,8 @@
 /* COLORS
 Rosa #efd3b6
-Morado #1a1423 */
+Morado #1a1423 
+hover #a98573
+gris #2e282a*/
 
 
 html{
@@ -9,62 +11,21 @@ html{
 
 /* INDEX */
 body{
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    padding-top: 120px;
 }
-
 .bg-white{
     background-color: #ffffff;
 }
-
-
-
-
-.header{
-    position: sticky;
-    top: 0;
-}
-.menuPrincipal{
-    background-color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 20px;
-}
-.menuPrincipal__logo{
-    width: 200px;
-    height: 94px;
-}
-.menuPrincipal__nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.menuPrincipal__nav__texto{
-    list-style-type: none;
-    padding: 20px;
+.navbar-expand-lg .navbar-nav .nav-link {
     font-size: 18px;
-}
-.menuPrincipal__nav__texto a{
-    text-decoration: none;
-    color: black;
-    font-weight: 500;
-}
-.mainIndex{
-    background-image: url(../Images/fondo-index-principal.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 400px;
-}
-.principal__titulo{
-    font-size: 40px;
-    padding: 150px 0 0 20px;
 }
 .notaIndex{
     background-color: #efd3b6;
     padding: 20px;
+}
+.notaIndex h2{
+    margin-bottom: 0;
 }
 .notaIndex__cont{
     display: flex;
@@ -75,23 +36,24 @@ body{
     width: 40%;
     height: 100px;
     align-self: center;
+    text-align: center;
 }
 .notaIndex__imagen{
     width: 30%;
 }
-.productosIndex{
-    padding: 20px 20px 30px 20px;
-}
-.productosIndex__cont{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-.productosIndex__texto{
-    display: flex;
-    justify-content: center;
-    font-weight: 600;
-    color: #1a1423;
+.btn-primary {
+    --bs-btn-color: #000;
+    --bs-btn-bg: #efd3b6;
+    --bs-btn-border-color: #efd3b6;
+    --bs-btn-hover-color: #ffff;
+    --bs-btn-hover-bg: #a98573;
+    --bs-btn-hover-border-color: #a98573;
+    --bs-btn-active-color: #000;
+    --bs-btn-active-bg: #efd3b6;
+    --bs-btn-active-border-color: #efd3b6;
+    --bs-btn-disabled-color: #000;
+    --bs-btn-disabled-bg: #efd3b6;
+    --bs-btn-disabled-border-color: #efd3b6;
 }
 .blogIndex{
     background-color: #1a1423;

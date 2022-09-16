@@ -55,6 +55,9 @@ body{
     --bs-btn-disabled-bg: #efd3b6;
     --bs-btn-disabled-border-color: #efd3b6;
 }
+.card {
+    --bs-card-border-color: #ffff;
+}
 .blogIndex{
     background-color: #1a1423;
     padding: 20px 20px 60px 20px;
@@ -64,10 +67,6 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-}
-.blogIndex div img{
-    width: 250px;
-    height: 250px;
 }
 .footer{
     background-color: black;
@@ -316,24 +315,12 @@ body{
 
 /* TABLET-768px */
 @media  screen and (max-width:768px) {
-.header{
+body {
+    padding-top: 0;
+}
+.fixed-top {
     position: static;
-    }
-.menuPrincipal{
-    justify-content: flex-start;
-    padding: 10px;
-    }
-.menuPrincipal__logo{
-    width: 150px;
-    height: 75px;
-    }
-.menuPrincipal__nav__texto{
-    padding: 10px;
-    font-size: 15px;
-    }
-.menuPrincipal__nav__texto a{
-    font-weight: 500;
-    }
+}
 .notaIndex__cont{
     flex-direction: column;
     justify-content: center;
@@ -341,6 +328,7 @@ body{
 }
 .notaIndex__cont img{
     order: -1;
+    padding: 20px;
 }
 .notaIndex__texto{
     width: 600px;
@@ -350,19 +338,6 @@ body{
 .notaIndex__imagen{
     width: 40%;
 }
-.productosIndex{
-    padding: 0;
-}
-.productosIndex h2{
-    padding: 20px;
-}
-.productosIndex__cont{
-    flex-wrap: wrap;
-}
-.productosIndex__cont div img{
-    width: 260px;
-    height: 260px;
-}
 .blogIndex{
     padding: 0;
 }
@@ -371,10 +346,6 @@ body{
 }
 .blogIndex__imagenes{
     padding: 0 0 20px 0;
-}
-.blogIndex div img{
-    width: 200px;
-    height: 200px;
 }
 .whatsapp{
     bottom: 30px;
@@ -412,29 +383,9 @@ body{
 
 /* MOBILE-500px */
 @media  screen and (max-width:500px) {
-.header{
-    position: static;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.menuPrincipal{
-    flex-direction: column;
-    padding: 0;
-    }
-.menuPrincipal__nav{
-    flex-direction: column;
-    padding: 0;
-    }
-.menuPrincipal__logo{
-    width: 150px;
-    height: 75px;
-}
-.menuPrincipal__nav__texto{
-        font-size: 13px;
-        text-align: center;
-        padding: 3px;
-}
+.notaIndex {
+    padding: 20px 20px 70px 20px !important;
+}    
 .footer__cont{
     flex-direction: column;
     justify-content: space-around;
@@ -443,10 +394,10 @@ body{
 .footer__cont__colum ul li{
     text-align: center;
 }
-.whatsapp{
+/* .whatsapp{
     right: 30px;
     bottom: 20px;
-}
+} */
 .nosotros__texto{
     width: 70%;
     height: 70%;

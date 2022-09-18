@@ -56,28 +56,28 @@ body{
     --bs-btn-disabled-border-color: #efd3b6;
 }
 .card {
-    --bs-card-border-color: #ffff;
+    --bs-card-border-color: #fff;
 }
 .blogIndex{
     background-color: #1a1423;
     padding: 20px 20px 60px 20px;
-    color: white;
+    color: #fff;
 }
-.footer{
+.bg-footer{
     background-color: black;
-    color: white
+    color: #fff;
 }
-.footer__cont{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+.botonFooter{
+    align-self: center;
 }
-.footer__cont__colum ul li{
-    list-style-type: none;
+.btn-outline-light {
+    --bs-btn-border-color: none;
 }
-.footer__cont__colum ul li a{
+.btnFooter{
+    --bs-btn-border-color: #fff;
+}
+.text-white {
     text-decoration: none;
-    color: white
 }
 .whatsapp{
     position: fixed;
@@ -107,32 +107,21 @@ body{
     background-color: #efd3b6;
     padding: 20px;
 }
-.logros__principal{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.cardLogros{
+    background-color: #efd3b6;
+    --bs-card-border-color: #efd3b6;
 }
-.logros__principal img{
-    width: 5%;
-    height: 5%;
+.imgLogros{
+    width: 27%;
+    height: 57%;
+    align-self: center;
 }
-.logros__principal p{
-    width: 50%;
-    height: 50%;
-    text-align: center;
+.textLogros{
+    font-size: 20px;
+    font-weight: 700;
 }
-.logros__secundarios{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding: 30px;
-}
-.logros__secundarios__cont{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+
+
 .logros__secundarios__cont img{
     width: 18%;
     height: 52%;

@@ -63,11 +63,6 @@ body{
     padding: 20px 20px 60px 20px;
     color: white;
 }
-.blogIndex__imagenes{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
 .footer{
     background-color: black;
     color: white
@@ -268,41 +263,15 @@ body{
 }
 .contacto__iconos div p{
     color: white;
+    margin-top: 27px;
 }
 .contacto__datos{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.formulario__cont{
-    background-color: #efd3b6;
-    padding: 20px;
-}
 .formulario__titulo{
     text-align: center;
-}
-.formulario__row{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 2px;
-}
-.formulario__column{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-}
-.formulario__boton{
-    display: flex;
-    justify-content: center;
-    padding: 13px;
-}
-.formulario__boton input{
-    padding: 10px;
-    background-color: #1a1423;
-    color: white;
-    border: #1a1423;
 }
 .mapa{
     grid-area: mapa;
@@ -339,13 +308,10 @@ body {
     width: 40%;
 }
 .blogIndex{
-    padding: 0;
+    padding-bottom: 30px;
 }
 .blogIndex h2{
     padding: 20px;
-}
-.blogIndex__imagenes{
-    padding: 0 0 20px 0;
 }
 .whatsapp{
     bottom: 30px;
@@ -463,9 +429,6 @@ body {
     width: 40px;
     height: 40px;
 }
-.formulario__row{
-    padding: 0px 72px
-}
 .notaIndex{
     padding: 20px 20px 40px 20px;
 }
@@ -489,5 +452,8 @@ body {
 }
 .blogIndex div img{
     padding: 5px;
+}
+.slide img{
+    height: 200px;
 }
 }

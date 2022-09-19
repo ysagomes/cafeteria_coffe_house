@@ -21,7 +21,7 @@
 </head>
 <body class="bodyProductos">
 
-    <!-- Acá inicia el encabezado -->
+<!-- Acá inicia el encabezado -->
     <header>
         <nav class="navbar navbar-expand-lg bg-white fixed-top">
             <div class="container-fluid">
@@ -51,21 +51,51 @@
             </div>
           </nav>
     </header>
-    <!-- Acá finaliza el encabezado -->
+<!-- Acá finaliza el encabezado -->
 
-    <!-- Acá va toda la info de mi sitio -->
-    <main class="productos">
+<!-- Sección producto seleccionado -->
+    <main class="container-fluid productos py-3">
         <h2 class="productos__titulo">Productos</h2>
-        <div class="productos__cont">
-            <div class="productos__principal">
-                <img src="../Images/producto-1.png" alt="Black Coffee">
-         </div>
-            <div class="productos__descripcion">
-                <h3>Black Coffee</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium officia voluptatum culpa minima aliquam, dolores adipisci aliquid beatae unde ut?</p>
+        <div class="row py-3">
+            <div class="col-lg-5">
+                <img src="../Images/producto-1.png" class="img-fluid rounded ps-5" alt="Black coffee">
+            </div>
+            <div class="col-lg-6 card text-center">
+                <div class="container">
+                    <div class="card">
+                        <div class="card-header">
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="tab" href="#caracteristicas">Características</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#origen">Origen</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#beneficios">Beneficios</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tab-content">
+                        <div id="caracteristicas" class="container tab-pane active m-4">
+                            <h3>Características</h3>
+                            <p class="textoProducto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div id="origen" class="container tab-pane fade m-4">
+                            <h3>Origen</h3>
+                            <p class="textoProducto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div id="beneficios" class="container tab-pane fade m-4">
+                            <h3>Beneficios</h3>
+                            <p class="textoProducto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div> 
             </div>
         </div>
-    </main>
+
+<!-- Sección otros productos -->
     <section class="productos__secundarios">
         <div>
             <img src="../Images/producto-2.png" alt="">
@@ -88,32 +118,32 @@
           <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
             <ul class="list-unstyled mb-0">
               <li>
-                <a href="#!" class="text-white">Inicio</a>
+                <a href="../index.html" class="text-white"><b>Inicio</b></a>
               </li>
               <li>
-                <a href="#!" class="text-white">Nosotros</a>
+                <a href="Nosotros.html" class="text-white">Nosotros</a>
               </li>
               <li>
-                <a href="#!" class="text-white">Productos</a>
+                <a href="Productos.html" class="text-white">Productos</a>
               </li>
               <li>
-                <a href="#!" class="text-white">Blog</a>
+                <a href="Blog.html" class="text-white">Blog</a>
               </li>
               <li>
-                <a href="#!" class="text-white">Contacto</a>
+                <a href="Contacto.html" class="text-white">Contacto</a>
               </li>
             </ul>
           </div>
           <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
             <ul class="list-unstyled mb-0">
               <li>
-                <a href="#!" class="text-white">Contacto</a>
+                <a href="Contacto.html" class="text-white"><b>Contacto</b></a>
               </li>
               <li>
                 <a href="#!" class="text-white">Tel: 11-5555-5555</a>
               </li>
               <li>
-                <a href="#!" class="text-white">info@coffeehouse.com</a>
+                <a href="mailto:info@coffeehouse.com" class="text-white">info@coffeehouse.com</a>
               </li>
               <li>
                 <a href="Contacto.html" class="text-white">Centro de ayuda</a>
@@ -122,11 +152,11 @@
           </div>
           <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
             <p class="pt-2">
-              <strong>Recibí las últimas novedades</strong>
+              <b>Recibí las últimas novedades</b>
             </p>
               <div class="form-outline form-white mb-4">
-                <input type="email" id="form5Example21" class="form-control" />
-                <label class="form-label" for="form5Example21">Email</label>
+                <input type="email" id="email" class="form-control" />
+                <label class="form-label" for="email">Email</label>
               </div>
           </div>
           <div class="botonFooter col-lg-3 col-md-6 mb-4 mb-md-0">
@@ -138,8 +168,11 @@
       </div>
       </section>
   </footer>
-  <!-- Acá finaliza elFooter -->
-    <!-- JavaScript Bundle with Popper -->
+<!-- Acá finaliza el Footer -->
+<!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </body>
 </html>

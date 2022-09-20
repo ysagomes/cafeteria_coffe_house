@@ -194,9 +194,6 @@ body{
     color: var(--bs-card-cap-color);
     background-color: #a98573;
 }
-.nav-link {
-    color: black;
-}
 .nav {
     --bs-nav-link-color: black;
     --bs-nav-link-hover-color: black;

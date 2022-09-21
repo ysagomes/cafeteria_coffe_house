@@ -124,6 +124,25 @@ body{
     width: 18%;
     height: 52%;
 }
+
+@keyframes aparecer{
+    0%{
+        opacity: 100%;
+    }
+    50%{
+        opacity: 40%;
+    }
+    100%{
+        opacity: 100%;
+    }
+    }
+.animation{
+    animation-name: aparecer; 
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    }
 .galeria{
     background-color: #1a1423;
     padding: 20px;
@@ -345,10 +364,6 @@ body {
 .notaIndex {
     padding: 20px 20px 70px 20px !important;
 }    
-/* .whatsapp{
-    right: 30px;
-    bottom: 20px;
-} */
 .nosotros__texto{
     width: 70%;
     height: 70%;
@@ -424,5 +439,15 @@ body {
 }
 .productos__secundarios div img {
     width: 35%;
+}
+.blog__cont{
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+.blog div img{
+    width: 65%;
+    filter: grayscale(100%);
+    padding: 10px;
 }
 }

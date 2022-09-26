@@ -1,0 +1,80 @@
+html{
+    font-size: 62,5%;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    padding-top: 120px;
+}
+.bg-white{
+    background-color: #ffffff;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    font-size: 18px;
+}
+.notaIndex{
+    background-color: #efd3b6;
+    padding: 20px;
+}
+.notaIndex h2{
+    margin-bottom: 0;
+}
+.notaIndex__cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.notaIndex__texto{
+    width: 40%;
+    height: 100px;
+    align-self: center;
+    text-align: center;
+}
+.notaIndex__imagen{
+    width: 30%;
+}
+.btn-primary {
+    --bs-btn-color: #000;
+    --bs-btn-bg: #efd3b6;
+    --bs-btn-border-color: #efd3b6;
+    --bs-btn-hover-color: #ffff;
+    --bs-btn-hover-bg: #a98573;
+    --bs-btn-hover-border-color: #a98573;
+    --bs-btn-active-color: #000;
+    --bs-btn-active-bg: #efd3b6;
+    --bs-btn-active-border-color: #efd3b6;
+    --bs-btn-disabled-color: #000;
+    --bs-btn-disabled-bg: #efd3b6;
+    --bs-btn-disabled-border-color: #efd3b6;
+}
+.card {
+    --bs-card-border-color: #fff;
+}
+.blogIndex{
+    background-color: #1a1423;
+    padding: 20px 20px 60px 20px;
+    color: #fff;
+}
+.bg-footer{
+    background-color: black;
+    color: #fff;
+}
+.botonFooter{
+    align-self: center;
+}
+.btn-outline-light {
+    --bs-btn-border-color: none;
+}
+.btnFooter{
+    --bs-btn-border-color: #fff;
+}
+.text-white {
+    text-decoration: none;
+}
+.whatsapp{
+    position: fixed;
+    right: 30px;
+    bottom: 20px;
+}
+.whatsapp img{
+    width: 50px;
+}

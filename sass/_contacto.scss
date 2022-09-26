@@ -1,0 +1,38 @@
+.contacto{
+    background-color: #1a1423;  
+    color: #fff;
+    padding-top: 20px;
+}
+
+.contacto__titulo{
+    text-align: center;
+}
+.contacto__iconos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 50px;
+}
+.contacto__iconos div img{
+    width: 60px;
+    height: 60px;
+}
+.contacto__iconos div p{
+    color: #fff;
+    margin-top: 27px;
+}
+.contacto__datos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.formulario__titulo{
+    text-align: center;
+}
+.mapa{
+    grid-area: mapa;
+}
+.mapa__cont{
+    display: flex;
+    justify-content: center;
+}

@@ -1,12 +1,6 @@
-/* COLORS
-Rosa #efd3b6
-Morado #1a1423 
-hover #a98573
-gris #2e282a*/
 html {
   font-size: 62,5%; }
 
-/* INDEX */
 body {
   font-family: 'Raleway', sans-serif;
   padding-top: 120px; }
@@ -84,102 +78,85 @@ body {
 .whatsapp img {
   width: 50px; }
 
-/* NOSOTROS */
 .nosotros {
   padding: 0 20px 20px 20px; }
-
-.nosotros__cont {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.nosotros__texto {
-  width: 50%;
-  height: 50%;
-  text-align: center; }
+  .nosotros .nosotros__cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .nosotros .nosotros__cont .nosotros__texto {
+      width: 50%;
+      height: 50%;
+      text-align: center; }
+      @media screen and (max-width: 768px) {
+        .nosotros .nosotros__cont .nosotros__texto {
+          margin: 0;
+          width: 70%;
+          height: 70%; } }
+      @media screen and (max-width: 500px) {
+        .nosotros .nosotros__cont .nosotros__texto {
+          width: 70%;
+          height: 70%;
+          font-size: 15px;
+          margin: 0; } }
 
 .logros {
   background-color: #efd3b6;
   padding: 20px; }
-
-.cardLogros {
-  background-color: #efd3b6;
-  --bs-card-border-color: #efd3b6; }
-
-.imgLogros {
-  width: 27%;
-  height: 57%;
-  align-self: center; }
-
-.textLogros {
-  font-size: 20px;
-  font-weight: 700; }
-
-.logros__secundarios__cont img {
-  width: 18%;
-  height: 52%; }
-
-@keyframes aparecer {
-  0% {
-    opacity: 100%; }
-  50% {
-    opacity: 40%; }
-  100% {
-    opacity: 100%; } }
-
-.animation {
-  animation-name: aparecer;
-  animation-duration: 2s;
-  animation-delay: 2s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear; }
+  .logros__cont__card {
+    background-color: #efd3b6;
+    --bs-card-border-color: #efd3b6; }
+    .logros__cont__card .imgLogros {
+      width: 27%;
+      height: 57%;
+      align-self: center; }
+    .logros__cont__card .textLogros {
+      font-size: 20px;
+      font-weight: 700; }
 
 .galeria {
   background-color: #1a1423;
   padding: 20px; }
+  .galeria__titulo {
+    color: white;
+    text-align: center; }
+  .galeria__imagenes {
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    grid-template-rows: repeat(3, 300px);
+    gap: 10px 10px;
+    grid-template-areas: "imagen1 imagen2" "imagen3 imagen2" "imagen3 imagen4";
+    justify-content: center;
+    padding: 20px; }
+    @media screen and (max-width: 768px) {
+      .galeria__imagenes {
+        grid-template-columns: repeat(2, 300px);
+        grid-template-rows: repeat(3, 250px); } }
+    @media screen and (max-width: 500px) {
+      .galeria__imagenes {
+        grid-template-columns: repeat(2, 150px);
+        grid-template-rows: repeat(3, 200px); } }
+    .galeria__imagenes .imagen1 {
+      grid-area: imagen1;
+      background-image: url(../Images/galeria-4.png);
+      background-position: center;
+      background-size: cover; }
+    .galeria__imagenes .imagen2 {
+      grid-area: imagen2;
+      background-image: url(../Images/galeria-2.png);
+      background-position: center;
+      background-size: cover; }
+    .galeria__imagenes .imagen3 {
+      grid-area: imagen3;
+      background-image: url(../Images/galeria-3.png);
+      background-position: center;
+      background-size: cover; }
+    .galeria__imagenes .imagen4 {
+      grid-area: imagen4;
+      background-image: url(../Images/galeria-1.png);
+      background-position: center;
+      background-size: cover; }
 
-.galeria__imagenes {
-  display: grid;
-  grid-template-columns: repeat(2, 500px);
-  grid-template-rows: repeat(3, 300px);
-  gap: 10px 10px;
-  grid-template-areas: "imagen1 imagen2" "imagen3 imagen2" "imagen3 imagen4";
-  justify-content: center;
-  padding: 20px; }
-
-.imagen1 {
-  grid-area: imagen1;
-  background-image: url(../Images/galeria-4.png);
-  background-position: center;
-  background-size: cover; }
-
-.imagen2 {
-  grid-area: imagen2;
-  background-image: url(../Images/galeria-2.png);
-  background-position: center;
-  background-size: cover; }
-
-.imagen3 {
-  grid-area: imagen3;
-  background-image: url(../Images/galeria-3.png);
-  background-position: center;
-  background-size: cover; }
-
-.imagen4 {
-  grid-area: imagen4;
-  background-image: url(../Images/galeria-1.png);
-  background-position: center;
-  background-size: cover; }
-
-.galeria h3 {
-  color: white;
-  text-align: center; }
-
-.galeria img {
-  width: 20%;
-  height: 20%; }
-
-/* PRODUCTOS */
 .productos {
   background-color: #efd3b6;
   text-align: center; }
@@ -207,7 +184,6 @@ body {
   width: 90%;
   text-align: center; }
 
-/* BLOG */
 .header {
   z-index: 1; }
 
@@ -240,7 +216,6 @@ body {
   --bs-btn-active-bg: #efd3b6;
   --bs-btn-active-border-color: #efd3b6; }
 
-/* CONTACTO */
 .contacto {
   background-color: #1a1423;
   color: #fff;
@@ -278,6 +253,21 @@ body {
   display: flex;
   justify-content: center; }
 
+@keyframes aparecer {
+  0% {
+    opacity: 100%; }
+  50% {
+    opacity: 40%; }
+  100% {
+    opacity: 100%; } }
+
+.animation {
+  animation-name: aparecer;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; }
+
 /* TABLET-768px */
 @media screen and (max-width: 768px) {
   body {
@@ -305,18 +295,11 @@ body {
     bottom: 30px; }
   .whatsapp img {
     width: 40px; }
-  .nosotros__texto {
-    margin: 0;
-    width: 70%;
-    height: 70%; }
   .contacto__datos p {
     text-align: center; }
   .contacto__iconos div img {
     width: 50px;
     height: 50px; }
-  .galeria__imagenes {
-    grid-template-columns: repeat(2, 300px);
-    grid-template-rows: repeat(3, 250px); }
   .productos__secundarios div img {
     width: 20%; } }
 
@@ -324,42 +307,6 @@ body {
 @media screen and (max-width: 500px) {
   .notaIndex {
     padding: 20px 20px 70px 20px !important; }
-  .nosotros__texto {
-    width: 70%;
-    height: 70%;
-    font-size: 15px;
-    margin: 0; }
-  .logros__principal img {
-    width: 10%;
-    height: 10%; }
-  .logros__principal p {
-    width: 70%;
-    height: 70%;
-    font-size: 15px;
-    margin: 0; }
-  .logros__secundarios img {
-    width: 10%;
-    height: 10%; }
-  .logros__secundarios {
-    flex-direction: column;
-    padding: 15px; }
-  .logros__secundarios__cont {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-  .galeria__imagenes {
-    grid-template-columns: repeat(2, 150px);
-    grid-template-rows: repeat(3, 200px); }
-  .galeria img {
-    width: 50%;
-    height: 50%;
-    padding: 5px; }
-  .contacto__iconos {
-    flex-direction: column;
-    padding: 20px; }
-  .contacto__iconos div img {
-    width: 40px;
-    height: 40px; }
   .notaIndex {
     padding: 20px 20px 40px 20px; }
   .notaIndex__texto {
@@ -379,6 +326,12 @@ body {
     padding: 5px; }
   .slide img {
     height: 200px; }
+  .contacto__iconos {
+    flex-direction: column;
+    padding: 20px; }
+  .contacto__iconos div img {
+    width: 40px;
+    height: 40px; }
   .productos__secundarios div img {
     width: 35%; }
   .blog__cont {

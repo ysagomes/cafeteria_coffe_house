@@ -77,20 +77,20 @@ body{
 }
 .card {
     --bs-card-border-color: #fff;
-    .btn-primary {
-        --bs-btn-color: #000;
-        --bs-btn-bg: #efd3b6;
-        --bs-btn-border-color: #efd3b6;
-        --bs-btn-hover-color: #ffff;
-        --bs-btn-hover-bg: #a98573;
-        --bs-btn-hover-border-color: #a98573;
-        --bs-btn-active-color: #000;
-        --bs-btn-active-bg: #efd3b6;
-        --bs-btn-active-border-color: #efd3b6;
-        --bs-btn-disabled-color: #000;
-        --bs-btn-disabled-bg: #efd3b6;
-        --bs-btn-disabled-border-color: #efd3b6;
-    }
+}
+.btn-primary {
+    --bs-btn-color: #000;
+    --bs-btn-bg: #efd3b6;
+    --bs-btn-border-color: #efd3b6;
+    --bs-btn-hover-color: #ffff;
+    --bs-btn-hover-bg: #a98573;
+    --bs-btn-hover-border-color: #a98573;
+    --bs-btn-active-color: #000;
+    --bs-btn-active-bg: #efd3b6;
+    --bs-btn-active-border-color: #efd3b6;
+    --bs-btn-disabled-color: #000;
+    --bs-btn-disabled-bg: #efd3b6;
+    --bs-btn-disabled-border-color: #efd3b6;
 }
 .blogIndex{
     background-color: $morado;
@@ -127,11 +127,11 @@ body{
         @media  screen and (max-width:768px){
             bottom: 30px;
         }
-        .whatsapp img{
+        .whatsapp__img{
             width: 50px;
             @media  screen and (max-width:768px){
                 width: 40px;
             }
-        }
     }
+}
 }

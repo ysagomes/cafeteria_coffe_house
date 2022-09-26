@@ -4,6 +4,8 @@
 .blog{
     .blog__titulo{
         text-align: center;
+    }
+    .blog__cont1{
         .btn-secondary {
             --bs-btn-color: #000;
             --bs-btn-bg: #efd3b6;
@@ -15,7 +17,7 @@
             --bs-btn-active-border-color: #efd3b6;
         }
     }
-    .blog__cont{
+    .blog__cont2{
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;

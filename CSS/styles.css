@@ -65,19 +65,20 @@ body {
 
 .card {
   --bs-card-border-color: #fff; }
-  .card .btn-primary {
-    --bs-btn-color: #000;
-    --bs-btn-bg: #efd3b6;
-    --bs-btn-border-color: #efd3b6;
-    --bs-btn-hover-color: #ffff;
-    --bs-btn-hover-bg: #a98573;
-    --bs-btn-hover-border-color: #a98573;
-    --bs-btn-active-color: #000;
-    --bs-btn-active-bg: #efd3b6;
-    --bs-btn-active-border-color: #efd3b6;
-    --bs-btn-disabled-color: #000;
-    --bs-btn-disabled-bg: #efd3b6;
-    --bs-btn-disabled-border-color: #efd3b6; }
+
+.btn-primary {
+  --bs-btn-color: #000;
+  --bs-btn-bg: #efd3b6;
+  --bs-btn-border-color: #efd3b6;
+  --bs-btn-hover-color: #ffff;
+  --bs-btn-hover-bg: #a98573;
+  --bs-btn-hover-border-color: #a98573;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: #efd3b6;
+  --bs-btn-active-border-color: #efd3b6;
+  --bs-btn-disabled-color: #000;
+  --bs-btn-disabled-bg: #efd3b6;
+  --bs-btn-disabled-border-color: #efd3b6; }
 
 .blogIndex {
   background-color: #1a1423;
@@ -108,10 +109,10 @@ body {
     @media screen and (max-width: 768px) {
       .bg-footer .whatsapp {
         bottom: 30px; } }
-    .bg-footer .whatsapp .whatsapp img {
+    .bg-footer .whatsapp .whatsapp__img {
       width: 50px; }
       @media screen and (max-width: 768px) {
-        .bg-footer .whatsapp .whatsapp img {
+        .bg-footer .whatsapp .whatsapp__img {
           width: 40px; } }
 
 .nosotros {
@@ -227,38 +228,39 @@ body {
 
 .blog .blog__titulo {
   text-align: center; }
-  .blog .blog__titulo .btn-secondary {
-    --bs-btn-color: #000;
-    --bs-btn-bg: #efd3b6;
-    --bs-btn-border-color: #efd3b6;
-    --bs-btn-hover-bg: #a98573;
-    --bs-btn-hover-border-color: #a98573;
-    --bs-btn-focus-shadow-rgb: 130,138,145;
-    --bs-btn-active-bg: #efd3b6;
-    --bs-btn-active-border-color: #efd3b6; }
 
-.blog .blog__cont {
+.blog .blog__cont1 .btn-secondary {
+  --bs-btn-color: #000;
+  --bs-btn-bg: #efd3b6;
+  --bs-btn-border-color: #efd3b6;
+  --bs-btn-hover-bg: #a98573;
+  --bs-btn-hover-border-color: #a98573;
+  --bs-btn-focus-shadow-rgb: 130,138,145;
+  --bs-btn-active-bg: #efd3b6;
+  --bs-btn-active-border-color: #efd3b6; }
+
+.blog .blog__cont2 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-evenly;
   padding: 20px 0; }
   @media screen and (max-width: 500px) {
-    .blog .blog__cont {
+    .blog .blog__cont2 {
       flex-direction: column;
       align-items: center;
       padding: 0; } }
-  .blog .blog__cont img {
+  .blog .blog__cont2 img {
     width: 30%;
     height: 30%;
     filter: grayscale(100%);
     padding: 10px; }
     @media screen and (max-width: 500px) {
-      .blog .blog__cont img {
+      .blog .blog__cont2 img {
         width: 65%;
         filter: grayscale(100%);
         padding: 10px; } }
-  .blog .blog__cont img:hover {
+  .blog .blog__cont2 img:hover {
     filter: none; }
 
 .contacto {

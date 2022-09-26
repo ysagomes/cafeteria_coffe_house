@@ -4,77 +4,134 @@ html{
 body{
     font-family: 'Raleway', sans-serif;
     padding-top: 120px;
+    @media  screen and (max-width:768px){
+        padding-top: 0;
+    }
 }
 .bg-white{
-    background-color: #ffffff;
+    background-color: $rosa;
 }
-.navbar-expand-lg .navbar-nav .nav-link {
-    font-size: 18px;
+.fixed-top{
+    @media  screen and (max-width:768px){
+        position: static;
+    }
+}
+.navbar-expand-lg{
+    .navbar-nav{
+        .nav-link {
+            font-size: 18px;
+        }
+    } 
+}
+.slide{
+    & img{
+        @media  screen and (max-width:500px){
+            height: 200px;
+        }
+    }
 }
 .notaIndex{
-    background-color: #efd3b6;
+    background-color: $rosa;
     padding: 20px;
-}
-.notaIndex h2{
-    margin-bottom: 0;
-}
-.notaIndex__cont{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-.notaIndex__texto{
-    width: 40%;
-    height: 100px;
-    align-self: center;
-    text-align: center;
-}
-.notaIndex__imagen{
-    width: 30%;
-}
-.btn-primary {
-    --bs-btn-color: #000;
-    --bs-btn-bg: #efd3b6;
-    --bs-btn-border-color: #efd3b6;
-    --bs-btn-hover-color: #ffff;
-    --bs-btn-hover-bg: #a98573;
-    --bs-btn-hover-border-color: #a98573;
-    --bs-btn-active-color: #000;
-    --bs-btn-active-bg: #efd3b6;
-    --bs-btn-active-border-color: #efd3b6;
-    --bs-btn-disabled-color: #000;
-    --bs-btn-disabled-bg: #efd3b6;
-    --bs-btn-disabled-border-color: #efd3b6;
+    @media  screen and (max-width:500px){
+        padding: 20px 20px 70px 20px !important;
+    }
+    &__titulo{
+        margin-bottom: 0;
+    }
+    &__cont{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        @media  screen and (max-width:768px){
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        &__texto{
+            width: 40%;
+            height: 100px;
+            align-self: center;
+            text-align: center;
+            @media  screen and (max-width:768px){
+                width: 600px;
+                height: 100px;
+                text-align: center;
+            }
+            @media  screen and (max-width:500px){
+                width: 80%;
+            }
+        }
+        &__imagen{
+            width: 30%;
+            @media  screen and (max-width:768px){
+                order: -1;
+                padding: 20px;
+                width: 40%; 
+            }
+            @media  screen and (max-width:500px){
+                width: 50%;
+            }
+        }
+    }
 }
 .card {
     --bs-card-border-color: #fff;
+    .btn-primary {
+        --bs-btn-color: #000;
+        --bs-btn-bg: #efd3b6;
+        --bs-btn-border-color: #efd3b6;
+        --bs-btn-hover-color: #ffff;
+        --bs-btn-hover-bg: #a98573;
+        --bs-btn-hover-border-color: #a98573;
+        --bs-btn-active-color: #000;
+        --bs-btn-active-bg: #efd3b6;
+        --bs-btn-active-border-color: #efd3b6;
+        --bs-btn-disabled-color: #000;
+        --bs-btn-disabled-bg: #efd3b6;
+        --bs-btn-disabled-border-color: #efd3b6;
+    }
 }
 .blogIndex{
-    background-color: #1a1423;
+    background-color: $morado;
     padding: 20px 20px 60px 20px;
     color: #fff;
+    @media  screen and (max-width:768px){
+        padding-bottom: 30px;
+    }
+    &__titulo{
+        @media  screen and (max-width:768px){
+            padding: 20px;
+        }
+    }
 }
 .bg-footer{
     background-color: black;
     color: #fff;
-}
-.botonFooter{
-    align-self: center;
-}
-.btn-outline-light {
-    --bs-btn-border-color: none;
-}
-.btnFooter{
-    --bs-btn-border-color: #fff;
-}
-.text-white {
-    text-decoration: none;
-}
-.whatsapp{
-    position: fixed;
-    right: 30px;
-    bottom: 20px;
-}
-.whatsapp img{
-    width: 50px;
+    .text-white {
+        text-decoration: none;
+    }
+    .botonFooter{
+        align-self: center;
+        .btnFooter{
+            --bs-btn-border-color: #fff;
+        }
+        .btn-outline-light {
+            --bs-btn-border-color: none;
+        }
+    }
+    .whatsapp{
+        position: fixed;
+        right: 30px;
+        bottom: 20px;
+        @media  screen and (max-width:768px){
+            bottom: 30px;
+        }
+        .whatsapp img{
+            width: 50px;
+            @media  screen and (max-width:768px){
+                width: 40px;
+            }
+        }
+    }
 }

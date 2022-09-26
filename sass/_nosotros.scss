@@ -23,12 +23,12 @@
     }
 }
 .logros{
-    background-color: #efd3b6;
+    background-color: $rosa;
     padding: 20px;
     &__cont{
         &__card{
-            background-color: #efd3b6;
-            --bs-card-border-color: #efd3b6;
+            background-color: $rosa;
+            --bs-card-border-color: $rosa;
             .imgLogros{
                 width: 27%;
                 height: 57%;
@@ -42,7 +42,7 @@
     }
 }
 .galeria{
-    background-color: #1a1423;
+    background-color: $morado;
     padding: 20px;
     &__titulo{
         color: white;

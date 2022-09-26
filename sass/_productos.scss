@@ -1,27 +1,33 @@
 .productos{
-    background-color: #efd3b6;
+    background-color: $rosa;
     text-align: center;
+    .card-header {
+        color: var(--bs-card-cap-color);
+        background-color: $hover;
+        .nav {
+            --bs-nav-link-color: black;
+            --bs-nav-link-hover-color: black;
+        }
+    }
+    .textoProducto{
+        width: 90%;
+        text-align: center;
+    }
 }
-.productos__secundarios div{
+.productos__secundarios__cont{
     display: flex;
     flex-direction: row;
     justify-content: center;
     padding: 20px;
-}
-.productos__secundarios div img{
-    width: 10%;
-    height: 10%;
-    padding: 0 20px;
-}
-.card-header {
-    color: var(--bs-card-cap-color);
-    background-color: #a98573;
-}
-.nav {
-    --bs-nav-link-color: black;
-    --bs-nav-link-hover-color: black;
-}
-.textoProducto{
-    width: 90%;
-    text-align: center;
+    & img{
+        width: 10%;
+        height: 10%;
+        padding: 0 20px;
+        @media  screen and (max-width:768px){
+            width: 20%;
+        }
+        @media  screen and (max-width:500px){
+            width: 35%;
+        }
+    }
 }

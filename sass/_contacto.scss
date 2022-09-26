@@ -1,38 +1,45 @@
 .contacto{
-    background-color: #1a1423;  
+    background-color: $morado;  
     color: #fff;
     padding-top: 20px;
-}
-
-.contacto__titulo{
-    text-align: center;
-}
-.contacto__iconos{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding: 50px;
-}
-.contacto__iconos div img{
-    width: 60px;
-    height: 60px;
-}
-.contacto__iconos div p{
-    color: #fff;
-    margin-top: 27px;
-}
-.contacto__datos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    &__titulo{
+        text-align: center;
+    }
+    &__iconos{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 50px;
+        @media  screen and (max-width:500px){
+            flex-direction: column;
+            padding: 20px;
+        }
+        &__datos{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            & img{
+                width: 60px;
+                height: 60px;
+                @media  screen and (max-width:768px){
+                    width: 50px;
+                    height: 50px;   
+                }
+                @media  screen and (max-width:500px){
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+            & p{
+                color: #fff;
+                margin-top: 27px;
+                @media  screen and (max-width:768px){
+                    text-align: center;
+                }
+            }
+        }
+    }
 }
 .formulario__titulo{
     text-align: center;
-}
-.mapa{
-    grid-area: mapa;
-}
-.mapa__cont{
-    display: flex;
-    justify-content: center;
 }

@@ -6,28 +6,25 @@
         text-align: center;
     }
     &__iconos{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
+        display: map-get($estilos, flex);
+        flex-direction: map-get($estilos, direction);
+        justify-content: map-get($estilos, justify);
         padding: 50px;
         @media  screen and (max-width:500px){
             flex-direction: column;
             padding: 20px;
         }
         &__datos{
-            display: flex;
+            display: map-get($estilos, flex);
             flex-direction: column;
             align-items: center;
             & img{
-                width: 60px;
-                height: 60px;
+                @include sizes(60px, 60px);
                 @media  screen and (max-width:768px){
-                    width: 50px;
-                    height: 50px;   
+                    @include sizes(50px, 50px);
                 }
                 @media  screen and (max-width:500px){
-                    width: 40px;
-                    height: 40px;
+                    @include sizes(40px, 40px);
                 }
             }
             & p{

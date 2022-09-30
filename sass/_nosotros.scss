@@ -30,8 +30,7 @@
             background-color: $rosa;
             --bs-card-border-color: $rosa;
             .imgLogros{
-                width: 27%;
-                height: 57%;
+                @include sizes(27%, 57%);
                 align-self: center;
             }
             .textLogros{
@@ -74,22 +73,19 @@
             background-size: cover;
         }
         .imagen2{
+            @extend .imagen1;
             grid-area: imagen2;
             background-image: url(../Images/galeria-2.png);
-            background-position: center;
-            background-size: cover;
         }
         .imagen3{
+            @extend .imagen1;
             grid-area: imagen3;
             background-image: url(../Images/galeria-3.png);
-            background-position: center;
-            background-size: cover;
         }
         .imagen4{
+            @extend .imagen1;
             grid-area: imagen4;
             background-image: url(../Images/galeria-1.png);
-            background-position: center;
-            background-size: cover;
         }
     }
 }

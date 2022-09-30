@@ -8,6 +8,12 @@ body {
     body {
       padding-top: 0; } }
 
+h1 {
+  font-size: 2rem; }
+  @media screen and (max-width: 500px) {
+    h1 {
+      font-size: 1.6rem; } }
+
 .bg-white {
   background-color: #efd3b6; }
 
@@ -20,7 +26,26 @@ body {
 
 @media screen and (max-width: 500px) {
   .slide img {
-    height: 200px; } }
+    height: 250px; } }
+
+.slide .carousel-caption {
+  right: 67%;
+  bottom: 9.25rem;
+  left: 10%;
+  padding-bottom: 2.25rem;
+  color: black; }
+  @media screen and (max-width: 768px) {
+    .slide .carousel-caption {
+      right: 55%;
+      bottom: 3.25rem;
+      left: 4%; } }
+  .slide .carousel-caption__text {
+    font-weight: 600;
+    font-size: 40px; }
+    @media screen and (max-width: 768px) {
+      .slide .carousel-caption__text {
+        font-weight: 600;
+        font-size: 30px; } }
 
 .notaIndex {
   background-color: #efd3b6;
@@ -173,37 +198,34 @@ body {
       .galeria__imagenes {
         grid-template-columns: repeat(2, 150px);
         grid-template-rows: repeat(3, 200px); } }
-    .galeria__imagenes .imagen1 {
+    .galeria__imagenes .imagen1, .galeria__imagenes .imagen2, .galeria__imagenes .imagen3, .galeria__imagenes .imagen4 {
       grid-area: imagen1;
       background-image: url(../Images/galeria-4.png);
       background-position: center;
       background-size: cover; }
     .galeria__imagenes .imagen2 {
       grid-area: imagen2;
-      background-image: url(../Images/galeria-2.png);
-      background-position: center;
-      background-size: cover; }
+      background-image: url(../Images/galeria-2.png); }
     .galeria__imagenes .imagen3 {
       grid-area: imagen3;
-      background-image: url(../Images/galeria-3.png);
-      background-position: center;
-      background-size: cover; }
+      background-image: url(../Images/galeria-3.png); }
     .galeria__imagenes .imagen4 {
       grid-area: imagen4;
-      background-image: url(../Images/galeria-1.png);
-      background-position: center;
-      background-size: cover; }
+      background-image: url(../Images/galeria-1.png); }
 
 .productos {
   background-color: #efd3b6;
   text-align: center; }
-  .productos .card-header {
+  @media screen and (max-width: 768px) {
+    .productos__titulo {
+      padding: 20px; } }
+  .productos__titulo .card-header {
     color: var(--bs-card-cap-color);
     background-color: #a98573; }
-    .productos .card-header .nav {
+    .productos__titulo .card-header .nav {
       --bs-nav-link-color: black;
       --bs-nav-link-hover-color: black; }
-  .productos .textoProducto {
+  .productos__titulo .textoProducto {
     width: 90%;
     text-align: center; }
 

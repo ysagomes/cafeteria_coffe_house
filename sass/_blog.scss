@@ -20,8 +20,8 @@
     .blog__cont2{
         display: flex;
         flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-evenly;
+        flex-direction: map-get($estilos, direction);
+        justify-content: map-get($estilos, justify);
         padding: 20px 0;
         @media  screen and (max-width:500px){
             flex-direction: column;
@@ -29,8 +29,7 @@
             padding: 0;
         }
         & img{
-            width: 30%;
-            height: 30%;
+            @include sizes(30%, 30%);
             filter: grayscale(100%);
             padding: 10px;
             @media  screen and (max-width:500px){

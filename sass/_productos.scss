@@ -1,27 +1,31 @@
 .productos{
     background-color: $rosa;
     text-align: center;
-    .card-header {
-        color: var(--bs-card-cap-color);
-        background-color: $hover;
-        .nav {
-            --bs-nav-link-color: black;
-            --bs-nav-link-hover-color: black;
+    &__titulo{
+        @media  screen and (max-width:768px){
+            padding: 20px;
         }
-    }
-    .textoProducto{
-        width: 90%;
-        text-align: center;
-    }
+        .card-header {
+            color: var(--bs-card-cap-color);
+            background-color: $hover;
+            .nav {
+                --bs-nav-link-color: black;
+                --bs-nav-link-hover-color: black;
+            }
+        }
+        .textoProducto{
+            width: 90%;
+            text-align: center;
+        }
+}
 }
 .productos__secundarios__cont{
-    display: flex;
-    flex-direction: row;
+    display: map-get($estilos, flex);
+    flex-direction: map-get($estilos, direction);
     justify-content: center;
     padding: 20px;
     & img{
-        width: 10%;
-        height: 10%;
+        @include sizes(10%, 10%);
         padding: 0 20px;
         @media  screen and (max-width:768px){
             width: 20%;

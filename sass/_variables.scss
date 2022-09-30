@@ -2,3 +2,15 @@ $rosa: #efd3b6;
 $morado: #1a1423; 
 $hover: #a98573;
 $gris: #2e282a;
+
+@mixin sizes($width, $height) {
+    width: $width;
+    height: $height;
+ }
+ 
+ 
+$estilos: (
+    flex: flex,
+    direction: row,
+    justify: space-evenly
+);

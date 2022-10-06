@@ -30,8 +30,8 @@
         }
         & img{
             @include sizes(30%, 30%);
-            filter: grayscale(100%);
             padding: 10px;
+            border-radius: 20px;
             @media  screen and (max-width:500px){
                 width: 65%;
                 filter: grayscale(100%);
@@ -39,7 +39,9 @@
             }
         }
         & img:hover{
-            filter: none;
+            filter: grayscale(100%);
         }
     }
 }
+
+

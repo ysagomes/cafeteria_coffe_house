@@ -26,6 +26,7 @@
     background-color: $rosa;
     padding: 20px;
     &__cont{
+        --bs-gutter-x: -0.5rem;
         &__card{
             background-color: $rosa;
             --bs-card-border-color: $rosa;

@@ -141,7 +141,7 @@ h1 {
     .blogIndex .blogIndex__contenedor div .capa {
       position: absolute;
       top: 0;
-      margin-left: 48px;
+      margin-left: 50px;
       width: 65%;
       height: 100%;
       background-color: #efd3b6;
@@ -151,7 +151,7 @@ h1 {
       border-radius: 12px; }
       @media screen and (max-width: 768px) {
         .blogIndex .blogIndex__contenedor div .capa {
-          width: 80%;
+          width: 82%;
           margin-left: 12px; } }
       .blogIndex .blogIndex__contenedor div .capa h3 {
         color: black;
@@ -207,16 +207,18 @@ h1 {
 .logros {
   background-color: #efd3b6;
   padding: 20px; }
-  .logros__cont__card {
-    background-color: #efd3b6;
-    --bs-card-border-color: $rosa; }
-    .logros__cont__card .imgLogros {
-      width: 27%;
-      height: 57%;
-      align-self: center; }
-    .logros__cont__card .textLogros {
-      font-size: 20px;
-      font-weight: 700; }
+  .logros__cont {
+    --bs-gutter-x: -0.5rem; }
+    .logros__cont__card {
+      background-color: #efd3b6;
+      --bs-card-border-color: $rosa; }
+      .logros__cont__card .imgLogros {
+        width: 27%;
+        height: 57%;
+        align-self: center; }
+      .logros__cont__card .textLogros {
+        font-size: 20px;
+        font-weight: 700; }
 
 .galeria {
   background-color: #1a1423;
@@ -258,18 +260,23 @@ h1 {
 .productos {
   background-color: #efd3b6;
   text-align: center; }
+  @media screen and (max-width: 768px) {
+    .productos {
+      padding-bottom: 30px; } }
   .productos__titulo {
     padding-top: 20px; }
     @media screen and (max-width: 768px) {
       .productos__titulo {
         padding: 20px; } }
-    .productos__titulo .card-header {
+  .productos__cont {
+    --bs-gutter-x: -0.5rem; }
+    .productos__cont .card-header {
       color: var(--bs-card-cap-color);
       background-color: #a98573; }
-      .productos__titulo .card-header .nav {
+      .productos__cont .card-header .nav {
         --bs-nav-link-color: black;
         --bs-nav-link-hover-color: black; }
-    .productos__titulo .textoProducto {
+    .productos__cont .textoProducto {
       width: 90%;
       text-align: center; }
 
@@ -378,6 +385,11 @@ h1 {
 
 .formulario__titulo {
   text-align: center; }
+
+.formulario__cont {
+  --bs-gutter-x: -0.5rem; }
+  .formulario__cont__mapa {
+    padding: 10px; }
 
 @keyframes aparecer {
   0% {

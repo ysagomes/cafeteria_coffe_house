@@ -156,15 +156,15 @@ h1{
         & .capa{
             position: absolute;
             top: 0;
-            margin-left: 53px;
-            @include sizes (60%, 100%);
+            margin-left: 50px;
+            @include sizes (65%, 100%);
             background-color: $rosa;
             opacity: 0;
             visibility: hidden;
             text-align: center;
             border-radius: 12px;
             @media  screen and (max-width:768px){
-                width: 80%;
+                width: 82%;
                 margin-left: 12px;
             }
             & h3{

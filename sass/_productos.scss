@@ -1,11 +1,17 @@
 .productos{
     background-color: $rosa;
     text-align: center;
+    @media  screen and (max-width:768px){
+    padding-bottom: 30px;
+    }
     &__titulo{
         padding-top: 20px;
         @media  screen and (max-width:768px){
             padding: 20px;
         }
+    }
+    &__cont{
+        --bs-gutter-x: -0.5rem;
         .card-header {
             color: var(--bs-card-cap-color);
             background-color: $hover;
@@ -18,8 +24,10 @@
             width: 90%;
             text-align: center;
         }
+    }
 }
-}
+
+
 .productos__secundarios__cont{
     display: map-get($estilos, flex);
     flex-direction: map-get($estilos, direction);

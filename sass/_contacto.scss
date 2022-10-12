@@ -39,6 +39,14 @@
         }
     }
 }
-.formulario__titulo{
-    text-align: center;
+.formulario{
+    &__titulo{
+        text-align: center;
+    }
+    &__cont{
+        --bs-gutter-x: -0.5rem;
+        &__mapa{
+            padding: 10px;
+        }
+    }
 }
